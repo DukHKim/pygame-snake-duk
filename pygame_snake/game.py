@@ -57,7 +57,7 @@ class Game:
         self.snake.append(Coordinate(self.grid_length / 2, self.grid_height / 2))
         self.snake_direction = Direction.RIGHT
         self.food_location = self.get_random_food()
-        self.move_timer = 200 # ms
+        self.move_timer = 50 # ms
         pygame.time.set_timer(self.MOVE_EVENT, self.move_timer)
     
     def init_screen(self):
